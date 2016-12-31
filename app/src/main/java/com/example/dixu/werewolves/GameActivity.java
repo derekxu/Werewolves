@@ -13,9 +13,10 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        Log.i(TAG, "GameActivity is started!");
     }
 
-    public void onStartGame(View view) {
+    public void onNext(View view) {
         Log.i(TAG, "NEXT is clicked!");
     }
 }
