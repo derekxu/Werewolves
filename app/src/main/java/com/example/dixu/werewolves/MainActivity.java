@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onStartGame(View view) {
         Log.i(TAG, "Start Game is clicked!");
-        Intent intent = new Intent(MainActivity.this, GameActivity.class);
+        Intent intent = new Intent(MainActivity.this, TabbedGameActivity.class);
         startActivity(intent);
     }
 }
