@@ -6,21 +6,16 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 
-/**
- * App Main Activity before Start the game.
- */
-public class MainActivity extends AppCompatActivity {
-    private static final String TAG = "MainActivity";
+public class GameActivity extends AppCompatActivity {
+    private static final String TAG = "GameActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_game);
     }
 
     public void onStartGame(View view) {
-        Log.i(TAG, "Start Game is clicked!");
-        Intent intent = new Intent(MainActivity.this, GameActivity.class);
-        startActivity(intent);
+        Log.i(TAG, "NEXT is clicked!");
     }
 }
