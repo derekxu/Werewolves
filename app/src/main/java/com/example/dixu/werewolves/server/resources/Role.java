@@ -1,4 +1,4 @@
-package com.example.dixu.werewolves.server.entities;
+package com.example.dixu.werewolves.server.resources;
 
 /**
  * All Roles in the game.

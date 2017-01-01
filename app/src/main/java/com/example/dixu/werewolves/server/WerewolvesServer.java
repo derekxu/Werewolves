@@ -1,6 +1,6 @@
 package com.example.dixu.werewolves.server;
 
-import com.example.dixu.werewolves.server.entities.Player;
+import com.example.dixu.werewolves.server.resources.Player;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class WerewolvesServer {
     private void initPlayers() {
         players = new ArrayList<>();
         for (int i = 0; i < NUM_PLAYERS_BEGIN; i++) {
-            players.add(new Player(i));
+            players.add(Player.create(i));
         }
     }
 
