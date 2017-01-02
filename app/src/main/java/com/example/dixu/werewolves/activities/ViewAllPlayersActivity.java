@@ -24,12 +24,13 @@ public class ViewAllPlayersActivity extends AppCompatActivity {
         Log.i(TAG, "ViewAllPlayersActivity is started!");
 
         playersListView = (ListView) findViewById(R.id.players_list_view);
-        String[] listPlayers = new String[server.getNumPlayersAtBegin()];
+        /*String[] listPlayers = new String[server.getNumPlayersAtBegin()];
         for (int i = 0; i < listPlayers.length; i++) {
             listPlayers[i] = Integer.toString(server.getPlayer(i).getId());
         }
         ArrayAdapter adapter =
-                new ArrayAdapter(this, android.R.layout.simple_list_item_1, listPlayers);
+                new ArrayAdapter(this, android.R.layout.simple_list_item_1, listPlayers);*/
+        PlayerAdapter adapter = new PlayerAdapter(this, server.getAllPlayers());
         playersListView.setAdapter(adapter);
     }
 }

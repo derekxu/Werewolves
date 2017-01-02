@@ -35,7 +35,12 @@ public class WerewolvesServer {
     public Player getPlayer(int id) {
         return players.get(id);
     }
+
     public int getNumPlayersAtBegin() {
         return NUM_PLAYERS_AT_BEGIN;
+    }
+
+    public List<Player> getAllPlayers() {
+        return players;
     }
 }

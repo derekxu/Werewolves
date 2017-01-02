@@ -14,4 +14,8 @@ public abstract class Player {
     public abstract int getId();
     public abstract Role getRole();
     public abstract boolean getIsAlive();
+
+    public int getNumber() {
+        return getId() + 1;
+    }
 }
